@@ -482,7 +482,7 @@ jobs:
           CCACHE_MAXSIZE: 1G
         run: |
           ccache -z
-          scripts/build_android.sh --version 0.0.0
+          scripts/build_android.sh --version 0.4.7
           ccache -s
       - name: upload Android artifact
         uses: actions/upload-artifact@v7
